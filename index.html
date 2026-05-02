@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Ayat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<!-- INTRO -->
+<div class="scene active" id="s1">
+  <h1 class="fade">
+    This is not just a website…<br>
+    it’s for Ayat.
+  </h1>
+  <button onclick="next(2)">Start</button>
+</div>
+
+<!-- EMOTION -->
+<div class="scene" id="s2">
+  <h1>Before we begin… what do you feel?</h1>
+
+  <div class="row">
+    <button onclick="next(3)">💖 Loved</button>
+    <button onclick="next(3)">🌙 Understood</button>
+    <button onclick="next(3)">✨ Surprised</button>
+  </div>
+</div>
+
+<!-- MESSAGE (UPDATED) -->
+<div class="scene" id="s3">
+  <h1 style="font-size:18px; line-height:1.9;">
+انا عارف اني اوقات بزعلك وبتحسي اني مش مهتم، ومقدرش الومك على الاحساس ده.<br><br>
+
+بس انا عمري ما كان قصدي كده، انتي فعلاً اغلى انسانه في حياتي.<br><br>
+
+انا مش شايف غيرك، ومش عايز اخسرك ولا ازعلك تاني.<br><br>
+
+كل اللي حصل، وكمان الغموض اللي كان موجود بينا، خلاكي مش مطمّنه ومش عارفة تحسي العلاقة بشكل واضح… وانا عارف ده ومش متجاهله.<br><br>
+
+وانا بحاول اصلّح ده بطريقتي ونخلي كل حاجة أوضح وأبسط بينا.<br><br>
+
+انا بحبك، ونفسي نرجع زي زمان ونكمل سوا…<br><br>
+
+موافقة تدينا فرصة؟
+  </h1>
+
+  <div class="row">
+    <button class="yes" onclick="yes()">YES 💖</button>
+    <button class="no" onclick="no()">🥺 NO</button>
+  </div>
+</div>
+
+<!-- YES -->
+<div class="scene" id="s4">
+  <h1 class="big">💖 She said YES…</h1>
+  <div class="row">
+    <button onclick="restart()">Replay</button>
+  </div>
+</div>
+
+<!-- NO -->
+<div class="scene" id="s5">
+  <h1 class="big">💔 I understand…</h1>
+  <div class="row">
+    <button onclick="restart()">Replay</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
